@@ -19,7 +19,8 @@ Happy linting! 💖
     },
     "extends": [
         "plugin:@typescript-eslint/recommended",
-        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "prettier"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -28,7 +29,8 @@ Happy linting! 💖
     },
     "plugins": [
         "@typescript-eslint",
-        "@typescript-eslint/tslint"
+        "@typescript-eslint/tslint",
+        "prettier"
     ],
     "rules": {
         "@typescript-eslint/array-type": "off",
@@ -190,6 +192,7 @@ Happy linting! 💖
             "error",
             "never"
         ],
+        "prettier/prettier": "error",
         "quote-props": [
             "error",
             "as-needed"
